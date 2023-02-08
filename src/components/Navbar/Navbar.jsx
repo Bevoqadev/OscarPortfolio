@@ -4,6 +4,7 @@ import { Navbar, Nav, Container, Button} from "react-bootstrap";
 import logo from "../../assets/img/logo.svg";
 import {BsGithub} from 'react-icons/bs'
 import {SlSocialLinkedin } from 'react-icons/sl'
+import {BsArrowRightCircle} from 'react-icons/bs'
 
 
 const NavBar = () => {
@@ -76,7 +77,7 @@ const NavBar = () => {
             </div>
           {/*  <HashLink to="#connect"> */}
               <button className="vvd">
-                <span>Let's Connect</span>
+                <span>Let's Connect <BsArrowRightCircle color='white'/></span>
               </button>
       {/*       </HashLink>  */}
           </span>
