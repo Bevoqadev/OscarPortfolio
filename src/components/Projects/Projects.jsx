@@ -1,7 +1,10 @@
 import React from "react";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import ProjectsCard from "../Cards/ProjectsCard";
-import color2 from '../../assets/img/color-sharp2.png'
+import color2 from "../../assets/img/color-sharp2.png";
+import TrackVisibility from "react-on-screen";
+import "animate.css";
+
 
 const projects = [
   { title: "one", description: "one", imgUrl: "" },
@@ -17,9 +20,19 @@ const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div className={isVisible? 'animate__animated animate__pulse':''}>
+                  <h2>Projects</h2>
+                </div>
+              )}
+            </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey={"first"}>
-              <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+              <Nav
+                variant="pills"
+                className="nav-pills mb-5 justify-content-center align-items-center"
+                id="pills-tab"
+              >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Active</Nav.Link>
                 </Nav.Item>
@@ -39,17 +52,27 @@ const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque quam, quod neque provident velit, rem explicabo
+                    excepturi id illo molestiae blanditiis, eligendi dicta
+                    officiis asperiores delectus quasi inventore debitis quo.
+                  </p>
+                </Tab.Pane>
+                <Tab.Pane eventKey="third">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque quam, quod neque provident velit, rem explicabo
+                    excepturi id illo molestiae blanditiis, eligendi dicta
+                    officiis asperiores delectus quasi inventore debitis quo.
+                  </p>
+                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={color2} alt='rigth'/>
+      <img className="background-image-right" src={color2} alt="rigth" />
     </section>
   );
 };
