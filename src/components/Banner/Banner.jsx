@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import headimg from '../../assets/img/header.png'
+import {BsBoxArrowInDown }from 'react-icons/bs'
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -48,8 +50,8 @@ const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+        <Row >
+          <Col xs={12} md={6} xl={6}>
             <span className="tagline">Welcome to my portfolio</span>
             <h1>
               {"I'm Klear, "} <span className="wrap">{text} </span>
@@ -60,10 +62,10 @@ const Banner = () => {
               debitis at vitae quo, dignissimos quis qui est iusto asperiores
               culpa! Corporis?
             </p>
-            <button onClick={() => {}}>Let's connect</button>
+            <button onClick={() => {}}>Download resume<BsBoxArrowInDown/></button>
           </Col>
-          <Col xs={12} md={6} xl={7}>
-            <img src={''} alt="Header image" />
+          <Col xs={12} md={6} xl={5}>
+            <img src={headimg} alt="Header image"/>
           </Col>
         </Row>
       </Container>

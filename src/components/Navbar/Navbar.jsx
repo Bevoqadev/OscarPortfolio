@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Navbar, Nav, Container, Button} from "react-bootstrap";
 /* import { HashLink } from 'react-router-hash-link'; */
-import logo from "../../assets/img/logo.svg";
+import logo from "../../assets/img/logo.png";
 import {BsGithub} from 'react-icons/bs'
 import {SlSocialLinkedin } from 'react-icons/sl'
 import {BsArrowRightCircle} from 'react-icons/bs'
@@ -31,7 +31,7 @@ const NavBar = () => {
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" width={100} height={100}/>
+          <img src={logo} alt="Logo" width={200} height={200}/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -68,10 +68,10 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://github.com/KlearCj">
              <BsGithub color="white"/>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/klear-madera/">
                 <SlSocialLinkedin color='white'/>
               </a>
             </div>
