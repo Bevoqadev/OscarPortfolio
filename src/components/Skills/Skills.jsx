@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import color from '../../assets/img/color-sharp.png'
 
 const responsive = {
     desktop: {
@@ -31,7 +32,24 @@ const Skills = () => {
 <h2>
     Skills
 </h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt vero reiciendis iusto assumenda beatae eius labore praesentium dolor repellat. Nobis tempore nulla ad voluptate quas velit, laudantium officia consectetur?</p>
 <Carousel className='skill-slider' responsive={responsive} infinite={true}>
+    <div className='item'>
+        <img src={''} alt='skill1'/>
+        <h5>Web dev</h5>
+    </div>
+    <div className='item'>
+        <img src={''} alt='skill1'/>
+        <h5>Web dev</h5>
+    </div>
+    <div className='item'>
+        <img src={''} alt='skill1'/>
+        <h5>Web dev</h5>
+    </div>
+    <div className='item'>
+        <img src={''} alt='skill1'/>
+        <h5>Web dev</h5>
+    </div>
     <div className='item'>
         <img src={''} alt='skill1'/>
         <h5>Web dev</h5>
@@ -41,6 +59,7 @@ const Skills = () => {
 </Col>
 </Row>
     </Container> 
+    <img src={color} alt="" className='background-image-left'/>
  </section>
   )
 }

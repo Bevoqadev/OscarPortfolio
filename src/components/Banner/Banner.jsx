@@ -65,7 +65,7 @@ const Banner = () => {
             <button onClick={() => {}}>Download resume<BsBoxArrowInDown/></button>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headimg} alt="Header image"/>
+            <img src={headimg} alt="Header"/>
           </Col>
         </Row>
       </Container>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Navbar, Nav, Container, Button} from "react-bootstrap";
+import { Navbar, Nav, Container} from "react-bootstrap";
 /* import { HashLink } from 'react-router-hash-link'; */
 import logo from "../../assets/img/logo.png";
 import {BsGithub} from 'react-icons/bs'
