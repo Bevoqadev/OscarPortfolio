@@ -1,18 +1,10 @@
 import React from "react";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import ProjectsCard from "../Cards/ProjectsCard";
+import { projects } from "./projectsList.js";
 import color2 from "../../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 import "animate.css";
-
-
-const projects = [
-  { title: "one", description: "one", imgUrl: "" },
-  { title: "one", description: "one", imgUrl: "" },
-  { title: "one", description: "one", imgUrl: "" },
-  { title: "one", description: "one", imgUrl: "" },
-  { title: "one", description: "one", imgUrl: "" },
-];
 
 const Projects = () => {
   return (
@@ -22,7 +14,11 @@ const Projects = () => {
           <Col>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div className={isVisible? 'animate__animated animate__pulse':''}>
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__pulse" : ""
+                  }
+                >
                   <h2>Projects</h2>
                 </div>
               )}
@@ -47,7 +43,12 @@ const Projects = () => {
                 <Tab.Pane eventKey="first">
                   <Row>
                     {projects.map((project, i) => {
-                      <ProjectsCard key={i} {...project} />;
+                        return (
+                          <ProjectsCard
+                            key={i}
+                            {...project}
+                            />
+                        )
                     })}
                   </Row>
                 </Tab.Pane>

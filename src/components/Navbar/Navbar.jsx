@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { Navbar, Nav, Container} from "react-bootstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 /* import { HashLink } from 'react-router-hash-link'; */
 import logo from "../../assets/img/logo.png";
-import {BsGithub} from 'react-icons/bs'
-import {SlSocialLinkedin } from 'react-icons/sl'
-import {BsArrowRightCircle} from 'react-icons/bs'
-
+import { BsGithub } from "react-icons/bs";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { BsArrowRightCircle } from "react-icons/bs";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -15,23 +14,25 @@ const NavBar = () => {
     const onScroll = () => {
       if (window.scrollY > 50) {
         setScrolled(true);
+      } else {
+        setScrolled(false);
       }
-      setScrolled(false);
     };
+
     window.addEventListener("scroll", onScroll);
 
-    return ()=> window.removeEventListener('scroll',onScroll)
-  }, [scrolled]);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
-  }
+  };
 
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" width={200} height={200}/>
+          <img src={logo} alt="Logo" width={200} height={200} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -69,17 +70,19 @@ const NavBar = () => {
           <span className="navbar-text">
             <div className="social-icon">
               <a href="https://github.com/KlearCj">
-             <BsGithub color="white"/>
+                <BsGithub color="white" />
               </a>
               <a href="https://www.linkedin.com/in/klear-madera/">
-                <SlSocialLinkedin color='white'/>
+                <SlSocialLinkedin color="white" />
               </a>
             </div>
-          {/*  <HashLink to="#connect"> */}
-              <button className="vvd">
-                <span>Let's Connect <BsArrowRightCircle color='white'/></span>
-              </button>
-      {/*       </HashLink>  */}
+            {/*  <HashLink to="#connect"> */}
+            <button className="vvd">
+              <span>
+                Let's Connect <BsArrowRightCircle color="white" />
+              </span>
+            </button>
+            {/*       </HashLink>  */}
           </span>
         </Navbar.Collapse>
       </Container>

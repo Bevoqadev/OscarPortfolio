@@ -1,7 +1,8 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 
-const ProjectsCard = ({ title, description, imgUrl }) => {
+const ProjectsCard = ({ title, description, imgUrl}) => {
+  console.log(title);
   return (
     <Col sm={6} md={4}>
       <div className="proj-imgbx">
