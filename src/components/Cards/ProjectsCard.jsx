@@ -1,8 +1,9 @@
 import React from "react";
 import { Col } from "react-bootstrap";
+import { BsGithub } from "react-icons/bs";
+import { BiLinkExternal } from "react-icons/bi";
 
-const ProjectsCard = ({ title, description, imgUrl}) => {
-  console.log(title);
+const ProjectsCard = ({ title, description, imgUrl, gitUrl, site }) => {
   return (
     <Col sm={6} md={4}>
       <div className="proj-imgbx">
@@ -10,6 +11,20 @@ const ProjectsCard = ({ title, description, imgUrl}) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
+          {gitUrl ? (
+            <a href={gitUrl}>
+              <BsGithub color="white" />
+            </a>
+          ) : (
+            ""
+          )}
+          {site ? (
+            <a href={site}>
+              <BiLinkExternal color="white" />
+            </a>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </Col>

@@ -30,42 +30,25 @@ const Projects = () => {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Active</Nav.Link>
+                  <Nav.Link eventKey="first">Projects</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Option 2</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Disabled</Nav.Link>
+                  <Nav.Link eventKey="second">Description</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
                     {projects.map((project, i) => {
-                        return (
-                          <ProjectsCard
-                            key={i}
-                            {...project}
-                            />
-                        )
+                      return <ProjectsCard key={i} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
-                  </p>
-                </Tab.Pane>
-                <Tab.Pane eventKey="third">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
+                    These projects were done as programming practices, using
+                    different technologies to improve my knowledge as a
+                    Fullstack developer🤓🚀.
                   </p>
                 </Tab.Pane>
               </Tab.Content>

@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import headimg from "../../assets/img/header.png";
 import { BsBoxArrowInDown } from "react-icons/bs";
 import TrackVisibility from "react-on-screen";
+import resume from "./kmresume.pdf";
 import "animate.css";
 
 const Banner = () => {
@@ -55,24 +56,31 @@ const Banner = () => {
         <Row>
           <Col xs={12} md={6} xl={6}>
             <TrackVisibility>
-            {({isVisible})=>
-            <div className={isVisible ? "animate__animated animate__fadeIn":''}>
-            <span className="tagline">Welcome to my portfolio</span>
-            <h1>
-              {"I'm Klear, "} <span className="wrap">{text} </span>
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              ratione ipsa a odio excepturi neque, cupiditate architecto ipsum
-              debitis at vitae quo, dignissimos quis qui est iusto asperiores
-              culpa! Corporis?
-            </p>
-            <button onClick={() => {}}>
-              Download resume
-              <BsBoxArrowInDown />
-            </button>
-            </div>
-            }
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeIn" : ""
+                  }
+                >
+                  <span className="tagline">Welcome to my portfolio</span>
+                  <h1>
+                    {"I'm Klear, "} <span className="wrap">{text} </span>
+                  </h1>
+                  <p>
+                    I am a software developer and animal lover. Graduated from
+                    Plataforma5, with the solid technical background and
+                    incredible soft skills I acquired there, I am ready for my
+                    first work experience in the IT world and to keep learning
+                    new technologies.
+                  </p>
+                  <a download href={resume} className="text-decoration-none">
+                    <button>
+                      Download resume
+                      <BsBoxArrowInDown />
+                    </button>
+                  </a>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>

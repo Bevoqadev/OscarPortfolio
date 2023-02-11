@@ -357,14 +357,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 50%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 50.000%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -402,18 +402,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 55px 0px 0px 55px;
 }
 .nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 200px;
 }
 .proj-imgbx::before {
   content: "";
