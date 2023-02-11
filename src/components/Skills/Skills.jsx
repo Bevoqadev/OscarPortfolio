@@ -41,10 +41,8 @@ const Skills = () => {
                   >
                     <h2>Skills</h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Natus incidunt vero reiciendis iusto assumenda beatae eius
-                      labore praesentium dolor repellat. Nobis tempore nulla ad
-                      voluptate quas velit, laudantium officia consectetur?
+                      🚀I keep learning new technologies to grow as a
+                      professional developer...🚀
                     </p>
                   </div>
                 )}

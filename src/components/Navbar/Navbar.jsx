@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-/* import { HashLink } from 'react-router-hash-link'; */
 import logo from "../../assets/img/logo.png";
 import { BsGithub } from "react-icons/bs";
 import { SlSocialLinkedin } from "react-icons/sl";
@@ -76,13 +75,14 @@ const NavBar = () => {
                 <SlSocialLinkedin color="white" />
               </a>
             </div>
-            {/*  <HashLink to="#connect"> */}
+        <a href='#connect' className="text-decoration-none">
             <button className="vvd">
               <span>
                 Let's Connect <BsArrowRightCircle color="white" />
               </span>
             </button>
-            {/*       </HashLink>  */}
+        </a>
+      
           </span>
         </Navbar.Collapse>
       </Container>
