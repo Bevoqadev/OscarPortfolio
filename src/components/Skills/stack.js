@@ -2,24 +2,18 @@ import js from "../../assets/img/JavaScript.png";
 import html from "../../assets/img/html.png";
 import css from "../../assets/img/css.png";
 import git from "../../assets/img/Git.png";
-import node from "../../assets/img/node.png";
-import react from "../../assets/img/react.png";
-import next from "../../assets/img/Nextjs.png";
-import redux from "../../assets/img/redux.png";
-import mongo from "../../assets/img/mongo.png";
-import postgres from "../../assets/img/postgresql.png";
-import ts from "../../assets/img/typescript.svg";
+import postman from "../../assets/img/postman.png";
+import wordpress from "../../assets/img/wordpress.png";
+import sap from "../../assets/img/SAP.png";
+
+
 
 export const stack = [
   { name: "HTML", img: html },
   { name: "CSS", img: css },
   { name: "Javascript", img: js },
   { name: "Git", img: git },
-  { name: "Node", img: node },
-  { name: "React", img: react },
-  { name: "Next", img: next },
-  { name: "Redux", img: redux },
-  { name: "MongoDB", img: mongo },
-  { name: "PostgreSQL", img: postgres },
-  { name: "Typescript", img: ts },
+  { name: "Postman", img: postman },
+  { name: "Wordpress", img: wordpress },
+  { name: "SAP", img: sap },
 ];

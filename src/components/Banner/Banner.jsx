@@ -9,7 +9,7 @@ import "animate.css";
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Fullstack Developer", "QA Tester"];
+  const toRotate = ["QA Tester"];
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
   const [delta, setDelta] = useState(300 - Math.random() + 100);
@@ -64,14 +64,10 @@ const Banner = () => {
                 >
                   <span className="tagline">Welcome to my portfolio</span>
                   <h1>
-                    {"I'm Klear, "} <span className="wrap">{text} </span>
+                    {"I'm Oscar, "} <span className="wrap">{text} </span>
                   </h1>
                   <p>
-                    I am a software developer and animal lover. Graduated from
-                    Plataforma5, with the solid technical background and
-                    incredible soft skills I acquired there, I am ready for my
-                    first work experience in the IT world and to keep learning
-                    new technologies.
+                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quaerat voluptatem molestias fugit est alias repellendus, magnam architecto aliquam. Quisquam vitae non similique exercitationem, distinctio itaque ratione facere nulla ut.
                   </p>
                   <a download href={resume} className="text-decoration-none">
                     <button>

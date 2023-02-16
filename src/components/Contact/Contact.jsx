@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import emailjs from "@emailjs/browser";
-import Lottie from 'lottie-react'
-import gif from './96590-astronaut-info.json'
+import contact from '../../assets/img/contact-img.png'
+import 'animate.css'
 
 const Contact = () => {
   const formInitialDetails = {
@@ -39,10 +39,10 @@ const Contact = () => {
     setButtonText("Sending...");
     emailjs
       .send(
-        "service_j32xm0k",
-        "template_evqgzx9",
+        "service_nsv6k4j",
+        "template_nwak153",
         formDetails,
-        "0Y5K2H_PZPEuDWOwm"
+        "OW3w6ptJJESLNK4gd"
       )
       .then(() => {
         setStatus({ success: true, message: "Message sent successfully" });
@@ -61,8 +61,8 @@ const Contact = () => {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-            <Col>
-            <Lottie animationData={gif} loop={true}/>
+            <Col className={buttonText === 'Sending...'? 'animate__animated animate__bounceOutRight':''}>
+           <img src={contact} alt=''/>
             </Col>
           <Col size={12} md={6}>
             <h2>Get In Touch</h2>

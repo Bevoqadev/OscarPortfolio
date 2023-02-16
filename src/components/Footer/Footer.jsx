@@ -15,14 +15,17 @@ const Footer = () => {
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://github.com/KlearCj"  target="_blank" rel="noreferrer">
+              <a href="https://github.com/Bevoqadev"  target="_blank" rel="noreferrer">
                <BsGithub/>
               </a>
-              <a href="https://www.linkedin.com/in/klear-madera/"  target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/oscar-anchabal/"  target="_blank" rel="noreferrer">
                 <SlSocialLinkedin />
               </a>
             </div>
             <p><AiOutlineCopyrightCircle/>Copyright 2023. All Rights Reserved</p>
+            <a href="https://www.klearmadera.com.ar/" target='_blank' rel='noreferrer'>
+              <p>Powered by Klear Madera Software Development</p>
+              </a>
           </Col>
         </Row>
       </Container>

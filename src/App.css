@@ -1,15 +1,15 @@
 /************ Custom Font ************/
  @font-face {
-  font-family: Source Code Pro;
-  src: url('../src/assets/font/SourceCodePro-Regular.ttf');
+  font-family: Inconsolata;
+  src: url('../src/assets/font/Inconsolata-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
-  font-family: Source Code Pro;
-  src: url('../src/assets/font/SourceCodePro-Medium.ttf');
+  font-family: Inconsolata;
+  src: url('../src/assets/font/Inconsolata-Medium.ttf');
   font-weight: 500;
-}
+} 
 
 /************ Default Css ************/
 * {
@@ -29,7 +29,7 @@ body {
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
-  font-family: 'Source Code Pro', sans-serif !important;
+  font-family: 'Inconsolata', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,6 +93,8 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
     width: 9%;
 }
+
+
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
   color: #fff !important;
@@ -230,7 +232,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/banner-bg.webp');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -239,7 +241,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(63, 62, 75, 0.5) -5.91%, rgba(103, 97, 130, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -278,9 +280,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-top: 15px;
 }
+
 .banner img {
-  animation: updown 3s linear infinite;
+  width: 100%;
 }
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -385,7 +389,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,103,1) 48%, rgba(122,65,121,1) 100%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -415,7 +419,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,103,1) 48%, rgba(122,65,121,1) 100%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -462,11 +466,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,103,1) 48%, rgba(122,65,121,1) 100%);
   padding: 60px 0 80px 0;
 }
 .contact img {
   width: 92%;
+  animation: updown 3s linear infinite;
 }
 .contact h2 {
 	font-size: 45px;
