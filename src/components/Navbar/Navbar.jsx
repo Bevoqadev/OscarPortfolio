@@ -68,10 +68,10 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://github.com/KlearCj">
+              <a href="https://github.com/KlearCj" target="_blank" rel="noreferrer">
                 <BsGithub color="white" />
               </a>
-              <a href="https://www.linkedin.com/in/klear-madera/">
+              <a href="https://www.linkedin.com/in/klear-madera/"  target="_blank" rel="noreferrer">
                 <SlSocialLinkedin color="white" />
               </a>
             </div>

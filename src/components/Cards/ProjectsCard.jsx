@@ -12,14 +12,14 @@ const ProjectsCard = ({ title, description, imgUrl, gitUrl, site }) => {
           <h4>{title}</h4>
           <span>{description}</span>
           {gitUrl ? (
-            <a href={gitUrl}>
+            <a href={gitUrl}  target="_blank" rel="noreferrer">
               <BsGithub color="white" />
             </a>
           ) : (
             ""
           )}
           {site ? (
-            <a href={site}>
+            <a href={site} target="_blank" rel="noreferrer">
               <BiLinkExternal color="white" />
             </a>
           ) : (

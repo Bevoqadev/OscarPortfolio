@@ -15,10 +15,10 @@ const Footer = () => {
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://github.com/KlearCj">
+              <a href="https://github.com/KlearCj"  target="_blank" rel="noreferrer">
                <BsGithub/>
               </a>
-              <a href="https://www.linkedin.com/in/klear-madera/">
+              <a href="https://www.linkedin.com/in/klear-madera/"  target="_blank" rel="noreferrer">
                 <SlSocialLinkedin />
               </a>
             </div>
