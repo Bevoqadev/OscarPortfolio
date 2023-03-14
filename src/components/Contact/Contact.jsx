@@ -42,7 +42,7 @@ const Contact = () => {
         "service_nsv6k4j",
         "template_nwak153",
         formDetails,
-        "OW3w6ptJJESLNK4gd"
+        "OW3w6ptJJESLNK4gd" 
       )
       .then(() => {
         setStatus({ success: true, message: "Message sent successfully" });
@@ -61,7 +61,7 @@ const Contact = () => {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-            <Col className={buttonText === 'Sending...'? 'animate__animated animate__bounceOutRight':''}>
+            <Col className={buttonText === 'Sending...'? 'animate__animated animate__bounceOutRight':'animate__animated animate__bounceInUp'}>
            <img src={contact} alt=''/>
             </Col>
           <Col size={12} md={6}>

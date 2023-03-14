@@ -3,13 +3,13 @@ import { Col, Container, Row } from "react-bootstrap";
 import headimg from "../../assets/img/header.png";
 import { BsBoxArrowInDown } from "react-icons/bs";
 import TrackVisibility from "react-on-screen";
-import resume from "./kmresume.pdf";
+import resume from "./Oscar_Anchabal_CV.pdf";
 import "animate.css";
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["QA Tester"];
+  const toRotate = ["QA Tester", "Developer"];
   const [text, setText] = useState("");
   const [index, setIndex] = useState(1);
   const [delta, setDelta] = useState(300 - Math.random() + 100);
@@ -67,7 +67,7 @@ const Banner = () => {
                     {"I'm Oscar, "} <span className="wrap">{text} </span>
                   </h1>
                   <p>
-                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quaerat voluptatem molestias fugit est alias repellendus, magnam architecto aliquam. Quisquam vitae non similique exercitationem, distinctio itaque ratione facere nulla ut.
+                  I'm a beginner software developer and QA tester. I'm studying at Plataforma5. I am ready for my first work experience in the IT world and to keep learning new technologies and improving my skills. 
                   </p>
                   <a download href={resume} className="text-decoration-none">
                     <button>

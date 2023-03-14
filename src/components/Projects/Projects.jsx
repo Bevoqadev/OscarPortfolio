@@ -46,9 +46,7 @@ const Projects = () => {
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
                   <p>
-                    These projects were done as programming practices, using
-                    different technologies to improve my knowledge as a
-                    Fullstack developer🤓🚀.
+                    I'm working on new projects🚀.
                   </p>
                 </Tab.Pane>
               </Tab.Content>

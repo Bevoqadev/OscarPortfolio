@@ -23,9 +23,6 @@ const Footer = () => {
               </a>
             </div>
             <p><AiOutlineCopyrightCircle/>Copyright 2023. All Rights Reserved</p>
-            <a href="https://www.klearmadera.com.ar/" target='_blank' rel='noreferrer'>
-              <p>Powered by Klear Madera Software Development</p>
-              </a>
           </Col>
         </Row>
       </Container>
